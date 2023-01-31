@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar class="glr-toolbar">
+      <ion-button class="btn-glr" (click)="openDetails()"> Open Gallery </ion-button>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <form >
+    <h2>Submit a topic</h2>
+    <ion-list>
+      <ion-item>
+        <ion-label> Title: </ion-label>
+        <ion-input placeholder="title of post"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <ion-button class="btn-image" routerLink="/list">Add Image</ion-button>
+
+    <ion-list>
+      <ion-item>
+        <ion-label> Content: </ion-label>
+        <ion-textarea placeholder="Please fill out this field."></ion-textarea>
+      </ion-item>
+    </ion-list>
+
+    <ion-button type="submit" expand="block">Submit</ion-button>
+  </form>
+</ion-content>
